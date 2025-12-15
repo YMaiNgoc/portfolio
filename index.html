@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Cá Nhân - Y Mai Ngọc</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/hero.css" />
+  <link rel="stylesheet" href="./css/about.css" />
+  <link rel="stylesheet" href="./css/portfolio.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+  <div id="header"></div>
+  <div id="hero"></div>
+  <div id="about"></div>
+  <div id="portfolio"></div>
+  <div id="contact"></div>
+  <div id="footer"></div>
+  <script>
+    function loadComponent(id, file) {
+      fetch(file)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Không tìm thấy " + file);
+          }
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+        })
+        .catch((error) => console.error(error));
+    }
+
+    loadComponent("header", "./html/header.html");
+    loadComponent("hero", "./html/hero.html");
+    loadComponent("about", "./html/about.html");
+    loadComponent("portfolio", "./html/portfolio.html");
+    loadComponent("contact", "./html/contact.html");
+    loadComponent("footer", "./html/footer.html");
+  </script>
+</body>
+</html>

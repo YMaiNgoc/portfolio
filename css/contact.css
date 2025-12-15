@@ -1,4 +1,4 @@
-/* Contact Section */
+
 .contact {
   padding: 80px 8%;
   background: #ffffff;
@@ -10,8 +10,6 @@
   margin-bottom: 40px;
   color: #2e2e2e;
 }
-
-/* FORM */
 .contact form {
   max-width: 600px;
   margin: 0 auto;
@@ -22,8 +20,6 @@
   flex-direction: column;
   gap: 16px;
 }
-
-/* INPUT & TEXTAREA */
 .contact input,
 .contact textarea {
   padding: 14px 16px;
@@ -40,20 +36,17 @@
   resize: vertical;
 }
 
-/* FOCUS */
 .contact input:focus,
 .contact textarea:focus {
   border-color: #b5d6b9;
   box-shadow: 0 0 0 3px rgba(181, 214, 185, 0.35);
 }
-
-/* BUTTON */
 .contact button {
   align-self: flex-start;
   padding: 12px 28px;
   border-radius: 30px;
   background: #b5d6b9;
-  color: #2e2e2e;
+  color: #ffffff;
   border: none;
   font-size: 14px;
   cursor: pointer;

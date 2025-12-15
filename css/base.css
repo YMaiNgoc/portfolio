@@ -1,4 +1,4 @@
-/* Reset và base styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +32,6 @@ body {
     background-color: #C9B7A3;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .container {
         padding: 0 10px;
