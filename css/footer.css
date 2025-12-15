@@ -1,0 +1,40 @@
+.footer {
+  background: #feece0;
+  padding: 48px 8%;
+  text-align: center;
+}
+
+.footer-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.footer-role {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  color: #b5d6b9;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #2e2e2e;
+  transform: translateY(-3px);
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: #777;
+}
