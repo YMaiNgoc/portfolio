@@ -52,7 +52,7 @@
 
 .btn.primary {
   background: #b5d6b9;
-  color: #2e2e2e;
+  color: #fffcfc;
 }
 
 .btn.primary:hover {
@@ -61,7 +61,7 @@
 
 .btn.outline {
   border: 1.5px solid #b5d6b9;
-  color: #2e2e2e;
+  color: #f8f8f8;
 }
 
 .btn.outline:hover {
