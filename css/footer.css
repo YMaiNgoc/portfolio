@@ -1,5 +1,5 @@
 .footer {
-  background: #feece0;
+  background: #b5d6b9;
   padding: 48px 8%;
   text-align: center;
 }
@@ -24,7 +24,7 @@
 }
 
 .footer-social a {
-  color: #98dfa0;
+  color: #feece0;
   font-size: 20px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
