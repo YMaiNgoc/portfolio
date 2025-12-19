@@ -1,11 +1,32 @@
 <section id="contact" class="contact">
     <div class="container">
         <h2>Liên hệ</h2>
-        <form>
-            <input type="text" placeholder="Tên của bạn" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Tin nhắn" required></textarea>
-            <button type="submit" class="btn">Gửi</button>
-        </form>
+        <p class="contact-intro">
+          Hãy kết nối với tôi qua các kênh mạng xã hội hoặc email. Tôi luôn sẵn sàng lắng nghe và trả lời mọi câu hỏi của bạn!
+        </p>
+        <button class="contact-btn" onclick="openContactModal()">Liên hệ với tôi</button>
     </div>
 </section>
+
+<!-- Contact Modal -->
+<div id="contactModal" class="contact-modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeContactModal()">&times;</button>
+        <h3>Liên hệ với tôi</h3>
+        <p>Chọn một trong các kênh dưới đây để kết nối:</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/y-mai-ngoc-a08651353/" target="_blank" class="social-link">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/YMaiNgoc" target="_blank" class="social-link">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="mailto:ymaingoc629@gmail.com" class="social-link">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </div>
+</div>

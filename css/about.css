@@ -28,17 +28,21 @@
 }
 
 .skill-card {
-  background: #feece0;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
   border-radius: 16px;
   padding: 24px 16px;
   text-align: center;
   transition: all 0.3s ease;
   cursor: default;
+  border: 1px solid rgba(99, 102, 241, 0.1);
 }
 
 .skill-card i {
   font-size: 28px;
-  color: #98dfa0;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 10px;
 }
 

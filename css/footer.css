@@ -1,5 +1,5 @@
 .footer {
-  background: #b5d6b9;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   padding: 48px 8%;
   text-align: center;
 }
@@ -8,11 +8,12 @@
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 4px;
+  color: #ffffff;
 }
 
 .footer-role {
   font-size: 14px;
-  color: #555;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 20px;
 }
 
@@ -24,17 +25,17 @@
 }
 
 .footer-social a {
-  color: #feece0;
+  color: #ffffff;
   font-size: 20px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-social a:hover {
-  color: #2e2e2e;
-  transform: translateY(-3px);
+  color: #e0e7ff;
+  transform: translateY(-3px) scale(1.1);
 }
 
 .footer-copy {
   font-size: 13px;
-  color: #777;
+  color: rgba(255, 255, 255, 0.8);
 }

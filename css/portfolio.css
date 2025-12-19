@@ -1,7 +1,7 @@
 
 .portfolio {
   padding: 80px 8%;
-  background: #b5d6b9;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
 }
 
 .portfolio h2 {
@@ -58,7 +58,7 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #b5d6b9;
+  color: #6366f1;
   font-size: 18px;
 }
 @media (max-width: 768px) {

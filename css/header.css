@@ -1,7 +1,7 @@
 
 header {
-    background-color: #b5d6b9;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
     position: fixed;
     width: 100%;
     top: 0;
@@ -23,14 +23,21 @@ nav {
   text-decoration: none;
 }
 
+.logo text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
 /* LOGO IMAGE */
 .logo img {
   width: 44px;
   height: 44px;
   object-fit: cover;
   border-radius: 50%;
-  background: #feece0;
-  border: 2px solid #b5d6b9;
+  background: #e0e7ff;
+  border: 2px solid #ffffff;
   padding: 4px;
   transition: all 0.3s ease;
 }
@@ -49,9 +56,10 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #2e2e2e;
+  color: #ffffff;
   font-size: 14px;
   position: relative;
+  font-weight: 500;
 }
 
 /* underline mượt */
@@ -62,10 +70,93 @@ nav {
   bottom: -6px;
   width: 0;
   height: 2px;
-  background: #b5d6b9;
+  background: #ffffff;
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover::after {
   width: 100%;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdown-toggle i {
+  font-size: 10px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown.active .dropdown-toggle i {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  padding: 8px 0;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.dropdown.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  color: #1e293b;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.dropdown-menu a::after {
+  display: none;
+}
+
+.dropdown-menu a:hover {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
+  color: #6366f1;
+  padding-left: 24px;
+}
+
+.dropdown-menu a i {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    right: auto;
+    left: 0;
+  }
 }

@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-  padding: 80px 8%;
-  background: #ffffff;
+  padding: 120px 8% 80px;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
 }
 
 .hero-content {
@@ -13,12 +13,13 @@
 
 .hero-tag {
   display: inline-block;
-  background: #feece0;
-  color: #2e2e2e;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: #ffffff;
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 14px;
   margin-bottom: 16px;
+  font-weight: 500;
 }
 
 .hero h2 {
@@ -28,7 +29,10 @@
 }
 
 .hero h2 span {
-  color: #b5d6b9;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero p {
@@ -51,8 +55,8 @@
 }
 
 .btn.primary {
-  background: #b5d6b9;
-  color: #fffcfc;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: #ffffff;
 }
 
 .btn.primary:hover {
@@ -60,12 +64,14 @@
 }
 
 .btn.outline {
-  border: 1.5px solid #b5d6b9;
-  color: #f8f8f8;
+  border: 1.5px solid #6366f1;
+  color: #6366f1;
+  background: transparent;
 }
 
 .btn.outline:hover {
-  background: #feece0;
+  background: #6366f1;
+  color: #ffffff;
 }
 
 .hero-image img {
@@ -82,8 +88,8 @@
   border-radius: 50%;
   background: linear-gradient(
     135deg,
-    #b5d6b9,
-    #feece0
+    #6366f1,
+    #8b5cf6
   );
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
 }
